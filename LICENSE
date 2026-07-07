@@ -1,0 +1,22 @@
+CC0 1.0 Universal
+
+The person who associated a work with this deed has dedicated the work to the
+public domain by waiving all of his or her rights to the work worldwide under
+copyright law, including all related and neighboring rights, to the extent
+allowed by law.
+
+You can copy, modify, distribute and perform the work, even for commercial
+purposes, all without asking permission.
+
+Scope of this dedication
+------------------------
+This CC0 dedication applies to the *catalog metadata* produced in this
+repository: the CSV files under `data/`, the Markdown dataset cards under
+`dataset_cards/`, and the templates. These files describe third-party datasets;
+they do not contain, and add no new rights to, the underlying data themselves.
+
+Each underlying dataset referenced in this catalog remains subject to its own
+license and terms of use. Anyone reusing an underlying dataset must comply with
+that dataset's license, not this one.
+
+Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode

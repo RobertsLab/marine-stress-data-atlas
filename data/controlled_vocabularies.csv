@@ -1,0 +1,46 @@
+field,term,definition,synonyms_examples
+stressor,heat,Elevated temperature / thermal stress above ambient,thermal stress; warming; marine heatwave
+stressor,cold,Reduced temperature / cold stress below ambient,chilling; cold shock
+stressor,ocean_acidification,Reduced seawater pH / elevated pCO2,OA; high CO2; low pH; hypercapnia
+stressor,hypoxia,Reduced dissolved oxygen,low oxygen; deoxygenation; anoxia
+stressor,salinity,Altered salinity (hypo- or hyper-osmotic),low salinity; freshening; hypersalinity
+stressor,disease,Pathogen challenge or naturally occurring disease,infection; pathogen exposure; wasting syndrome; OsHV-1; Vibrio
+stressor,pollutant,Chemical contaminant exposure,heavy metals; PAH; microplastics; pesticide; oil
+stressor,multistressor,Two or more stressors applied together,combined stress; heat+OA
+life_stage,embryo,Fertilization to hatching,zygote; cleavage
+life_stage,larva,Free-swimming or planktonic larval stage,larval; veliger; trochophore; planula; zoea
+life_stage,juvenile,Post-metamorphic immature stage,spat; recruit; post-larva
+life_stage,adult,Sexually mature stage,
+life_stage,mixed,Multiple life stages in one dataset,
+omics_type,RNA-seq,Bulk transcriptome sequencing,transcriptomics; mRNA-seq
+omics_type,scRNA-seq,Single-cell / single-nucleus transcriptome sequencing,single cell; snRNA-seq
+omics_type,microarray,Array-based expression profiling,expression array
+omics_type,WGBS,Whole-genome bisulfite sequencing (DNA methylation),bisulfite-seq; methylome
+omics_type,RRBS,Reduced-representation bisulfite sequencing,
+omics_type,MBD-seq,Methyl-binding-domain enrichment sequencing,MBD-BS
+omics_type,ATAC-seq,Chromatin accessibility sequencing,
+omics_type,ChIP-seq,Chromatin immunoprecipitation sequencing,
+omics_type,WGS,Whole-genome sequencing,resequencing; genome
+omics_type,proteomics,Mass-spectrometry protein profiling,LC-MS/MS; proteome
+omics_type,metabolomics,Small-molecule metabolite profiling,metabolome; NMR; GC-MS
+omics_type,lipidomics,Lipid profiling,
+omics_type,microbiome,16S/18S/ITS or metagenomic community profiling,16S; metagenome; amplicon
+omics_type,multiomics,Two or more omics layers in one dataset,integrated omics
+data_repository,GEO,NCBI Gene Expression Omnibus,
+data_repository,SRA,NCBI Sequence Read Archive,
+data_repository,ENA,European Nucleotide Archive,
+data_repository,ArrayExpress,EBI ArrayExpress / BioStudies,
+data_repository,PRIDE,EBI proteomics repository,
+data_repository,MetaboLights,EBI metabolomics repository,
+data_repository,Metabolomics_Workbench,NIH Metabolomics Workbench,
+data_repository,Dryad,Dryad Digital Repository,
+data_repository,Zenodo,Zenodo general-purpose repository,
+data_repository,figshare,figshare repository,
+data_repository,OSF,Open Science Framework,
+data_repository,other,Repository not listed above (specify in notes),
+has_raw_data,yes,Raw sequencing reads / spectra are publicly downloadable,
+has_raw_data,no,Only processed / summarized data are available,
+has_raw_data,unknown,Availability of raw data not yet confirmed,
+status,proposed,Row added but not yet checked,draft
+status,reviewed,Metadata checked by a second contributor,verified
+status,example,Placeholder/example row, not a real dataset,
