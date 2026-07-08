@@ -1,0 +1,31 @@
+name: Validate catalog
+
+# Automatically check every pull request that touches the dataset catalog,
+# its controlled vocabularies, or the dataset cards. The check confirms the
+# CSV follows the table conventions: exactly the expected columns, unique
+# dataset_ids, and controlled fields drawn only from the allowed vocabulary.
+on:
+  pull_request:
+    paths:
+      - "data/dataset_catalog.csv"
+      - "data/controlled_vocabularies.csv"
+      - "dataset_cards/**"
+      - "scripts/validate_catalog.py"
+      - ".github/workflows/validate-catalog.yml"
+  # Allow running it by hand from the Actions tab.
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the pull request
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate dataset_catalog.csv
+        run: python scripts/validate_catalog.py
