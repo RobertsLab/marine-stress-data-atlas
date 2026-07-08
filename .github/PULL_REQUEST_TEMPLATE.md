@@ -13,8 +13,9 @@
 - [ ] Controlled fields use terms from `data/controlled_vocabularies.csv`
       (or I added the new term in this PR)
 - [ ] Added `dataset_cards/<accession>.md` from the template
-- [ ] `python scripts/validate_catalog.py` passes
 - [ ] `status` is set to `proposed`
+- [ ] (Optional) Ran `python scripts/validate_catalog.py` — no worries if you
+      edited in the browser; a maintainer will run it
 
 ## Reviewer notes
 

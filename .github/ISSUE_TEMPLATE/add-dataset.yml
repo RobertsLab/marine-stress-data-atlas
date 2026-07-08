@@ -1,0 +1,162 @@
+name: Add a dataset (no coding needed)
+description: Submit one publicly available marine-stress dataset. A curator will add it to the catalog for you — no git or file editing required.
+title: "Add dataset: <accession>"
+labels: ["level-1-find", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Fill in what you can and submit — a curator will
+        turn this into a catalog row and dataset card and credit you. You don't
+        need to edit any files or use git.
+
+        **Only submit datasets whose data are publicly downloadable now.** If a
+        record says "available upon request" or is embargoed, please don't add it
+        (or set *Raw data available?* to `unknown` and explain in the notes).
+  - type: input
+    id: accession
+    attributes:
+      label: Accession
+      description: The repository ID for the dataset.
+      placeholder: e.g. GSE123456, PRJNA123456, PXD012345
+    validations:
+      required: true
+  - type: dropdown
+    id: data_repository
+    attributes:
+      label: Data repository
+      options:
+        - GEO
+        - SRA
+        - ENA
+        - ArrayExpress
+        - PRIDE
+        - MetaboLights
+        - Metabolomics_Workbench
+        - Dryad
+        - Zenodo
+        - figshare
+        - OSF
+        - other
+    validations:
+      required: true
+  - type: input
+    id: species
+    attributes:
+      label: Species (Latin binomial)
+      placeholder: e.g. Crassostrea gigas
+    validations:
+      required: true
+  - type: input
+    id: common_name
+    attributes:
+      label: Common name
+      placeholder: e.g. Pacific oyster
+  - type: dropdown
+    id: life_stage
+    attributes:
+      label: Life stage
+      options:
+        - embryo
+        - larva
+        - juvenile
+        - adult
+        - mixed
+  - type: dropdown
+    id: stressor
+    attributes:
+      label: Stressor
+      options:
+        - heat
+        - cold
+        - ocean_acidification
+        - hypoxia
+        - salinity
+        - disease
+        - pollutant
+        - multistressor
+    validations:
+      required: true
+  - type: input
+    id: stressor_level
+    attributes:
+      label: Stressor level (as reported, with units)
+      placeholder: e.g. 30 C, pH 7.6, 2 mg/L DO
+  - type: input
+    id: exposure_duration
+    attributes:
+      label: Exposure duration
+      placeholder: e.g. 5 days, 72 hours, chronic
+  - type: input
+    id: tissue
+    attributes:
+      label: Tissue / sample type
+      placeholder: e.g. gill, mantle, whole_organism
+  - type: dropdown
+    id: omics_type
+    attributes:
+      label: Omics type
+      options:
+        - RNA-seq
+        - scRNA-seq
+        - microarray
+        - WGBS
+        - RRBS
+        - MBD-seq
+        - ATAC-seq
+        - ChIP-seq
+        - WGS
+        - proteomics
+        - metabolomics
+        - lipidomics
+        - microbiome
+        - multiomics
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: e.g. Illumina
+  - type: input
+    id: sample_size
+    attributes:
+      label: Sample size (number of samples/libraries)
+      placeholder: e.g. 24
+  - type: input
+    id: location
+    attributes:
+      label: Collection / study location
+      placeholder: e.g. Washington USA
+  - type: input
+    id: publication_year
+    attributes:
+      label: Publication year
+      placeholder: e.g. 2024
+  - type: input
+    id: publication_doi
+    attributes:
+      label: Publication DOI (bare identifier, not a URL)
+      placeholder: e.g. 10.1234/abcd
+  - type: dropdown
+    id: has_raw_data
+    attributes:
+      label: Raw data available?
+      description: Are raw reads/spectra publicly downloadable?
+      options:
+        - "yes"
+        - "no"
+        - unknown
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Treatment groups, caveats, anything useful for the curator.
+      placeholder: e.g. Control, moderate, and severe hypoxia groups.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirmed the data are publicly downloadable now (I opened the download link myself).
+          required: true

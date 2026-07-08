@@ -71,14 +71,22 @@ worked example of a completed row, see
 
 ## How to contribute
 
-1. Find a relevant paper/dataset (Google Scholar, PubMed, GEO, SRA, ENA).
-2. Confirm the data are **publicly accessible**.
-3. Add one row to `data/dataset_catalog.csv`.
-4. Copy `templates/dataset_card_template.md` to `dataset_cards/<ACCESSION>.md` and fill it in.
-5. Run `python scripts/validate_catalog.py` (optional but appreciated).
-6. Open a pull request.
+**No git or coding required — you can do everything in your web browser.**
+Pick whichever fits you:
 
-Full walkthrough: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+- **Easiest — submit a form.** Open a [new issue](../../issues/new/choose),
+  choose **"Add a dataset"**, and fill in the fields. A curator adds it to the
+  catalog for you.
+- **Do it yourself in the browser.** Edit the files on GitHub's website; it
+  forks the project and opens the pull request for you. No software to install.
+- **Local git (advanced).** Clone the repo and work from the command line.
+
+The gist either way: find a relevant paper/dataset, confirm the data are
+**publicly accessible**, add one row to `data/dataset_catalog.csv`, and add a
+matching card in `dataset_cards/`.
+
+Full walkthrough with step-by-step instructions for each path:
+**[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
 ### Task levels
 
