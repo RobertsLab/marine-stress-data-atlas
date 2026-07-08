@@ -65,7 +65,9 @@ Every dataset is one row in [`data/dataset_catalog.csv`](data/dataset_catalog.cs
 | `status` | proposed / reviewed / example |
 
 Allowed values for the controlled fields live in
-[`data/controlled_vocabularies.csv`](data/controlled_vocabularies.csv).
+[`data/controlled_vocabularies.csv`](data/controlled_vocabularies.csv). For a
+worked example of a completed row, see
+[section 3 of CONTRIBUTING.md](CONTRIBUTING.md#3-add-a-row-to-datadataset_catalogcsv).
 
 ## How to contribute
 

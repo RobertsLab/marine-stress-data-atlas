@@ -46,6 +46,27 @@ record says "available upon request" or is embargoed, skip it (or add it with
 
 ## 3. Add a row to `data/dataset_catalog.csv`
 
+Open the file in a **plain-text editor** (VS Code, nano, etc.) — not Excel or
+Numbers, which can silently reformat quotes and dates — and add your dataset as
+one new line at the bottom.
+
+The 21 columns, in order, are:
+
+```
+dataset_id, accession, title, species, common_name, life_stage, stressor,
+stressor_level, exposure_duration, tissue, omics_type, platform, sample_size,
+location, publication_year, publication_doi, data_repository, has_raw_data,
+notes, curator, status
+```
+
+A completed row looks like this (copy it and replace the values):
+
+```
+4,GSE201234,Hypoxia response in eastern oyster gill,Crassostrea virginica,eastern oyster,adult,hypoxia,2 mg/L DO,7 days,gill,RNA-seq,Illumina,20,Chesapeake Bay USA,2023,10.1234/example,GEO,yes,"Control, moderate, and severe hypoxia groups",yourhandle,proposed
+```
+
+Then check each value against the rules below:
+
 - Give the new row the next unused `dataset_id` (largest existing + 1).
 - Fill every column. Use `NA` if a value truly doesn't apply or can't be found.
 - For the controlled fields — `stressor`, `life_stage`, `omics_type`,
