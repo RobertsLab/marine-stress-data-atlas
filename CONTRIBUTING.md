@@ -58,8 +58,12 @@ record says "available upon request" or is embargoed, skip it (or add it with
 ### 2. Add a row to the catalog
 
 1. Open [`data/dataset_catalog.csv`](data/dataset_catalog.csv) on GitHub.
-2. Click the **pencil ✏️ (Edit this file)** button. GitHub will offer to
-   **fork the repository** — click the green button to make your own copy.
+2. Click the **pencil ✏️ (Edit this file)** button.
+   - If you're **not** a member of the organization, GitHub offers to
+     **fork the repository** — click the green button to make your own copy.
+   - If you **are** an organization member with write access, you can edit
+     directly. That's fine — just be sure to commit to a **new branch**, not
+     `main` (see step 4).
 3. Scroll to the bottom and add your dataset as **one new line**.
 
 The 21 columns, in order, are:
@@ -107,10 +111,20 @@ the `dataset_id` in the card identical to the CSV row.
 
 ### 4. Propose your changes
 
-After each edit, click **Commit changes** (a short message like
-`Add GSE201234` is fine). When you've added both the row and the card, GitHub
-shows a **Compare & pull request** button — click it, confirm the checklist in
-the pull-request template, and submit.
+When you click **Commit changes**, the dialog asks *where* to save the commit.
+
+> ⚠️ **Always choose "Create a new branch for this commit and start a pull
+> request"** — do **not** pick "Commit directly to the `main` branch". Every
+> dataset goes through review, even if you have write access to the repository.
+
+Give the branch a name like `add-GSE201234` and use a short commit message
+(`Add GSE201234` is fine). Commit your CSV edit and your new card to the **same
+branch** — after the first commit, GitHub keeps you on that branch, so for the
+second file just make sure the commit dialog shows *"Commit directly to the
+`add-GSE201234` branch"* rather than offering the main-branch choice again.
+
+Once both files are on your branch, click **Create pull request**, confirm the
+checklist in the pull-request template, and submit.
 
 A second contributor reviews it, spot-checks the accession, and merges. You
 don't need to run any validation yourself — a maintainer (and an automated

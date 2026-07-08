@@ -77,8 +77,10 @@ Pick whichever fits you:
 - **Easiest — submit a form.** Open a [new issue](../../issues/new/choose),
   choose **"Add a dataset"**, and fill in the fields. A curator adds it to the
   catalog for you.
-- **Do it yourself in the browser.** Edit the files on GitHub's website; it
-  forks the project and opens the pull request for you. No software to install.
+- **Do it yourself in the browser.** Edit the files on GitHub's website and
+  commit to a **new branch** to open a pull request — no software to install.
+  (Even if you have write access, always use a branch + PR, never commit
+  straight to `main`.)
 - **Local git (advanced).** Clone the repo and work from the command line.
 
 The gist either way: find a relevant paper/dataset, confirm the data are
